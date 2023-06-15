@@ -57,7 +57,7 @@ interface VibePostApiInterface {
     )
 
     // 게시물 삭제
-    @HTTP(method = "DELETE", path = "http://ec2-175-41-230-93.ap-northeast-1.compute.amazonaws.com:8080/app/posts/{post_id}", hasBody = true)
+    @HTTP(method = "DELETE", path = "http://ec2-15-164-251-157.ap-northeast-2.compute.amazonaws.com:8080/app/posts/{post_id}", hasBody = true)
     fun postDelete(
         @Header("X-AUTH-TOKEN") jwt: String,
         @Path("post_id") postId: Int,

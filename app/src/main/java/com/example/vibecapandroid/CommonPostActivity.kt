@@ -279,10 +279,13 @@ class CommonPostActivity  : AppCompatActivity() {
                             )
                             if(responseData.is_success) {
                                 video_id=getYouTubeId(responseData.result.youtube_link)
-                                if(responseData.result.vibe_keywords!=null && sortTag(responseData.result.vibe_keywords)!="") {
-                                    feeling_tag = sortTag(responseData.result.vibe_keywords)
-                                    viewBinding.textViewTag1.setText("#"+feeling_tag)
-                                }
+//                                if(responseData.result.vibe_keywords!=null && sortTag(responseData.result.vibe_keywords)!="") {
+//                                    //feeling_tag = sortTag(responseData.result.vibe_keywords)
+//                                    //viewBinding.textViewTag1.setText("#"+feeling_tag)
+//                                    viewBinding.textViewTag1.setText("null")
+//                                }else{
+                                    viewBinding.textViewTag1.setText("null")
+                                //}
                                 Log.d("responseData feeling",responseData.result.vibe_keywords.toString())
                                 //기분으로 태그 작성
                                 setYoutube()

@@ -70,7 +70,7 @@ var setOnlyUseImageOnCapture:Boolean=false
 
 
 val retrofit: Retrofit = Retrofit.Builder()
-    .baseUrl("http://ec2-175-41-230-93.ap-northeast-1.compute.amazonaws.com:8080/")
+    .baseUrl("http://ec2-15-164-251-157.ap-northeast-2.compute.amazonaws.com:8080/")
     .addConverterFactory(GsonConverterFactory.create())
     .build()
 
